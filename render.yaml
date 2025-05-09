@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bot-absensi
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python BotAbsen_fixed.py"
+    autoDeploy: true
